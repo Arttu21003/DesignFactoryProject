@@ -1,2 +1,1 @@
-Arttu
 print ("Hello");
