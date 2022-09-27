@@ -2,7 +2,7 @@
 
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try{
-    $con=mysqli_connect("localhost:3306", "root", "", "cool_test");
+    $con=mysqli_connect("localhost:3306", "root", "", "cool_finland");
 }
 catch(Exception $e){
     print("Error");
