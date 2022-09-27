@@ -24,7 +24,7 @@ if ($con->connect_error){
 $sql = "insert into reservation_form (fname,lname,phone_number,reservation_date,reservation_time,quantity_ton,company_name,email_id,additional) values('$fname','$lname','$phone_number','$reservation_date','$reservation_time','$quantity_ton','$company_name','$email_id','$additional')";
 
 if ($con->query($sql) === TRUE) {
-	echo header("Location:./success.php");
+	echo header("Location:./success.html");
 } else {
 	echo "Error: ".$sql."<br>".$con->error;
 }
