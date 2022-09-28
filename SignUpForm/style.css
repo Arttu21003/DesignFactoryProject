@@ -8,14 +8,14 @@ body {
   height: 620px;
   margin: auto;
   background-color: white;
-  border-radius: 3px;
+  border-radius: 15px;
 }
 
 .login-box {
   width: 360px;
   height: 280px;
   margin: auto;
-  border-radius: 3px;
+  border-radius: 15px;
   background-color: white;
 }
 
@@ -44,7 +44,7 @@ form input {
   padding: 7px;
   border: none;
   border: 1px solid gray;
-  border-radius: 6px;
+  border-radius: 15px;
   outline: none;
 }
 input[type="button"] {
@@ -68,6 +68,6 @@ p {
   margin-top: -10px;
 }
 .para-2 a {
-  color: #1ffdc6;
+  color: #ffffff;
 }
 
