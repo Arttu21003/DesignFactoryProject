@@ -69,26 +69,17 @@
 <form action="reservation.php" method="post">
 
   <div class="elem-group">
-    <label for="date_time">Date and Time</label>
+    <label for="date_time">Date</label>
     <input type="date" id="reservation_date" name="reservation_date" class="form-control" placeholder="Enter Date" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-</div>
-<div class="elem-group">
-    <input type="time" id="reservation_time" name="reservation_time" class="form-control" placeholder="Enter Email" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
 </div>
 
 <br><br>
 
-<label for="quantity">Choose Quantity in tons (T)</label>
+<label for="quantity">Choose Delivery type</label>
 <select id="quantity_ton" name="quantity_ton" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-  <option value=">5">>5</option>
-  <option value="5">5</option>
-  <option value="10">10</option>
-  <option value="15">15</option>
-  <option value="20">20</option>
-  <option value="25">25</option>
-  <option value="30">30</option>
-  <option value="35">35</option>
-  <option value="40">40</option>
+  <option value="Container">Container</option>
+  <option value="Semi-trailer">Semi-trailer</option>
+  <option value="Tractor-trailer">Tractor-trailer</option>
 </select>
 
 
