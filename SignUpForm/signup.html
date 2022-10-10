@@ -1,4 +1,4 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Sign Up</title>
@@ -10,6 +10,24 @@
   <body>
     <div class="signup-box">
       <h1>Sign Up</h1>
+      <script>
+        function sendUser(form){
+            var user=new Object();
+            user.account=form.account.value;
+            user.password=form.password.value;
+            var jsonUser=JSON.stringify(user);
+        
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("result").innerHTML = this.responseText;
+              }
+            };
+            xmlhttp.open("POST", "../php/register.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("user=" + jsonUser);
+        }
+        </script>
       <form>
         <label>First Name</label>
         <input type="text" placeholder="" />
@@ -21,7 +39,7 @@
         <input type="password" placeholder="" />
         <label>Confirm Password</label>
         <input type="password" placeholder="" />
-        <input type="button" value="Submit" />
+        <input type="button" value="Submit" onclick="sendUser.apply" />
       </form>
       <p>
         By clicking the Sign Up button,you agree to our <br />
