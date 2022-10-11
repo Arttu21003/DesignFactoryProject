@@ -1,9 +1,9 @@
 <?php
 
-    $servername = "localhost";
+    $servername = "localhost:3306";
     $username = "root";
     $password = "";
-    $db = "contact_php";
+    $db = "cool_finland";
     // Create connection
     $conn = mysqli_connect($servername, $username, $password,$db);
 
