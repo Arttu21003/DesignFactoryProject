@@ -1015,11 +1015,12 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="/Code/aboutus1.html">About</a></li>
-          <li><a href="/Reservation/reservation.html">Make a Reservation</a></li>
-          <li><a href="/Contact US/contact.html">Contact us</a></li>
-          <li><a href="/SignUpForm/login.html">Sign up/Login</a></li>
+        <li><a href="#hero">Home</a></li>
+          <li><a href="Code/aboutus1.html">About</a></li>
+          <li><a href="calendar/index.php">Make a Reservation</a></li>
+          <li><a href="contact.php">Contact us</a></li>
+          <li><a href="SignUpForm/login.php">Login</a></li>
+          <li><a href="SignUpForm/register.php">Register</a></li>
           
       </nav><!-- .navbar -->
 
