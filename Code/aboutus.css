@@ -818,7 +818,7 @@
     font-size: 14px;
     background-color:#050d7e;
     padding: 50px 0;
-    color: rgb(129, 224, 228);
+    color: rgb(252, 252, 252);
   }
   
   .footer .footer-info .logo {
@@ -938,12 +938,6 @@ body {
     margin: 15px auto 0px auto;
     font-family: var(--font-default);
     margin-bottom: auto;
-}
-
-.text-center {
-    font-size: 44px;
-    color: rgb(39, 90, 79);
-    font-family: var(--font-default);
 }
 
 h1 {
