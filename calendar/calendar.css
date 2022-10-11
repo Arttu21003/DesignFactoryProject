@@ -1,64 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Cool Finland - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet'>
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
- 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
-    <link rel="stylesheet" href="calendar.css">
-
-    <style>
-        :root {
-            --bs-success-rgb: 71, 222, 152 !important;
-        }
-
-        html,
-        body {
-            
-            font-family: Apple Chancery, cursive;
-        }
-
-        .btn-info.text-light:hover,
-        .btn-info.text-light:focus {
-            background: #000;
-        }
-        table, tbody, td, tfoot, th, thead, tr {
-            border-color: #ededed !important;
-            border-style: solid;
-            border-width: 1px !important;
-        }
-        .title{
-            font-size: 30px;
-
-            /**
+/**
 * Template Name: Impact - v1.1.0
 * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
 * Author: BootstrapMade.com
@@ -985,258 +925,39 @@
   .footer .credits a {
     color: #fff;
   }
-        }
-    </style>
-</head>
-<header> 
-    <!-- ======= Header ======= -->
-<section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section><!-- End Top Bar -->
 
-  <header id="header" class="header d-flex align-items-center">
+/*--------------------------------------------------------------
+  #About uS
+  --------------------------------------------------------------*/
+body {
+    background-image: url('photo_2022-09-27_23-10-19.jpg');
+}
 
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Cool Finland OY<span>.</span></h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="/Code/aboutus1.html">About</a></li>
-          <li><a href="/Reservation/reservation.html">Make a Reservation</a></li>
-          <li><a href="/Contact US/contact.html">Contact us</a></li>
-          <li><a href="/SignUpForm/login.html">Sign up/Login</a></li>
-          
-      </nav><!-- .navbar -->
+.container
+{  
+    margin: 15px auto 0px auto;
+    font-family: var(--font-default);
+    margin-bottom: auto;
+}
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+h1 {
+    color: rgb(71, 48, 94);
+} 
 
-    </div>
-</header>
-<body class="bg-light">
+.fs-2 {
+    margin-left: 7em;
+    margin-top: 2em;
+}
 
-    <?php
-       /* require_once('db-connect.php');
+img {
+    margin-top: 4em;
+    border-radius: 8px;
+}
 
-        $schedules = $conn->query("SELECT * FROM `reservation_form`");
-        $sched_res = [];
-        
-
-        foreach($schedules->fetch_all(MYSQLI_ASSOC) as $row){
-            $row['sdate'] = date("F d Y ",strtotime($row['reservation_date']));
-            $sched_res[$row['id']] = $row;
-        }
-
-        if(isset($conn)) $conn->close(); */
-    ?>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient" id="topNavBar">
-        <div class="container d-flex justify-content-center">
-            <div class="row">
-
-            </div>
-        </div>
-    </nav>
-    <div class="container py-5" id="page-container">
-        <div class="row">
-            <div class="col-md-9">
-                <div id="calendar"></div>
-            </div>
-            <div class="col-md-3">
-                <div class="cardt rounded-0 shadow">
-                    <div class="card-header bg-gradient bg-primary text-light">
-                        <h5 class="card-title">Schedule Form</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="container-fluid">
-                            <form action="save_schedule.php" method="post" id="schedule-form">
-
-                            <div class="elem-group">
-                            <label for="date_time">Date</label>
-                            <input type="date" id="reservation_date" name="reservation_date" class="form-control" placeholder="Enter Date" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-                            </div>
-
-                            <br><br>
-
-                            <label for="type">Choose Delivery type</label>
-                            <select id="type" name="type" pattern=[A-Z\sa-z]{3,20} required>
-                            <option value="Container">Container</option>
-                            <option value="Semi-trailer">Semi-trailer</option>
-                            <option value="Tractor-trailer">Tractor-trailer</option>
-                            </select>
-
-                            <div class="elem-group">
-                            <label for="amount">Amount</label>
-                            <input type="number" id="amount" name="amount" placeholder="amount" pattern=[A-Z\sa-z]{3,20} required>
-                            </div>
-
-                            <br><br>
-                            <div class="elem-group">
-                            <label for="Fname">First name</label>
-                            <input type="text" id="fname" name="fname" placeholder="First Name" pattern=[A-Z\sa-z]{3,20} required>
-                            </div>
-                            <br><br>
-                            <div class="elem-group">
-                            <label for="Lname">Last name</label>
-                            <input type="text" id="lname" name="lname" placeholder="Last Name" pattern=[A-Z\sa-z]{3,20} required>
-                            </div>
-                            <br><br>
-                            <div class="elem-group">
-                            <label for="Phone_number">Phone Number</label>
-                            <input type="text" id="phone_number" name="phone_number" placeholder="Phone number" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-                            </div>
-                            <br><br>
-                            <div class="elem-group">
-                            <label for="Company">Company</label>
-                            <input type="Company" id="company_name" name="company_name" placeholder="Company" required>
-                            </div>
-                            <br><br>
-                            <div class="elem-group">
-                            <label for="email">Your E-mail</label>
-                            <input type="email" id="email" name="email_id" placeholder="john.doe@email.com" required>
-                            </div>
-                            <br><br>
-                            <div class="elem-group">
-                            <label for="message">Anything Else?</label>
-                            <textarea id="additional" name="additional" placeholder="Tell us anything else that might be important. Max: 500 characters" required></textarea>
-                            </div>
-                            
-                            </form>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="text-center">
-                            <button class="btn btn-primary btn-sm rounded-0" type="submit" form="schedule-form"><i class="fa fa-save"></i> Save</button>
-                            <button class="btn btn-default border btn-sm rounded-0" type="reset" form="schedule-form"><i class="fa fa-reset"></i> Cancel</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Event Details Modal -->
-    <div class="modal fade" tabindex="-1" data-bs-backdrop="static" id="event-details-modal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-0">
-                <div class="modal-header rounded-0">
-                    <h5 class="modal-title">Schedule Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body rounded-0">
-                    <div class="container-fluid">
-                        <dl>
-                            <dt class="text-muted">Start</dt>
-                            <dd id="start" class=""></dd>
-
-                            <dt class="text-muted">Type</dt>
-                            <dd id="type" class=""></dd>
-
-                            <dt class="text-muted">Amount</dt>
-                            <dd id="amount" class=""></dd>
-                        </dl>
-                    </div>
-                </div>
-                <div class="modal-footer rounded-0">
-                    <div class="text-end">
-                        <button type="button" class="btn btn-secondary btn-sm rounded-0" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        var scheds = $.parseJSON('<?= json_encode($sched_res) ?>')
-    </script>
-</body>
-
-<footer>
-      <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-<div class="container">
-  <div class="row gy-4">
-    <div class="col-lg-5 col-md-12 footer-info">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <span>Cool Finland</span>
-      </a>
-      
-      <div class="social-links d-flex mt-4">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-
-    <div class="col-lg-2 col-6 footer-links">
-      <h4>Useful Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Terms of service</a></li>
-        <li><a href="#">Privacy policy</a></li>
-      </ul>
-    </div>
-
-    <div class="col-lg-2 col-6 footer-links">
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">Web Development</a></li>
-        <li><a href="#">Product Management</a></li>
-        <li><a href="#">Marketing</a></li>
-        <li><a href="#">Graphic Design</a></li>
-      </ul>
-    </div>
-
-    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-      <h4>Contact Us</h4>
-      <p>
-        Kiimassuontie 127  <br>
-        30420 Forssa
-        Suomi<br>
-        <br>
-        <strong>Phone:8994357345</strong><br>
-        <strong>Email:cool.finland@gmail.com</strong><br>
-      </p>
-
-    </div>
-
-  </div>
-</div>
-
-<div class="container mt-4">
-  <div class="copyright">
-    &copy; ©2021-2022 Cool Finland Oy <strong><span></span></strong>. All Rights Reserved.
-  </div>
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-    
-  </div>
-</div>
-</footer>
-</html>
+.col-md-6 {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.btn.btn-warning{
+    margin: 100px;
+}
