@@ -2,12 +2,13 @@ var calendar;
 var Calendar = FullCalendar.Calendar;
 var events = [];
 
+
 $(function() {
 
     if (!!scheds) {
         Object.keys(scheds).map(k => {
             var row = scheds[k]
-            events.push({ id: row.id, title: row.title, start: row.start_datetime });
+            events.push({ id: row.id, title: row.type + " " + row.amount, start: row.reservation_date });
         });
     }
     
@@ -25,14 +26,16 @@ $(function() {
         selectable: true,
         themeSystem: 'bootstrap',
         events: events,
+    
         eventClick: function(info) {
             var details = $('#event-details-modal');
             var id = info.event.id;
 
             if (!!scheds[id]) {
                 details.find('#title').text(scheds[id].title);
-                details.find('#description').text(scheds[id].description);
+                details.find('#type').text(scheds[id].type);
                 details.find('#start').text(scheds[id].sdate);
+                details.find('#amount').text(scheds[id].amount);
                 details.find('#edit,#delete').attr('data-id', id);
                 details.modal('show');
             } else {
@@ -90,5 +93,30 @@ $(function() {
         } else {
             alert("Event is undefined");
         }
+    });
+
+    //Dont Allow Weekends to be reserved
+    const picker = document.getElementById('reservation_date');
+    picker.addEventListener('input', function(e){
+      var day = new Date(this.value).getUTCDay();
+      if([6,0].includes(day)){
+        e.preventDefault();
+        this.value = '';
+        alert('Weekends not allowed');
+      }
+    });
+    $(function(){
+        var dtToday = new Date();
+        
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate() + 3;
+        var year = dtToday.getFullYear();
+        if(month < 10)
+            month = '0' + month.toString();
+        if(day < 10)
+            day = '0' + day.toString();
+        
+        var maxDate = year + '-' + month + '-' + day;
+        $('#reservation_date').attr('min', maxDate);
     });
 });

@@ -41,9 +41,10 @@
 
         $schedules = $conn->query("SELECT * FROM `reservation_form`");
         $sched_res = [];
+        
 
         foreach($schedules->fetch_all(MYSQLI_ASSOC) as $row){
-            $row['sdate'] = date("D, M Y",strtotime($row['reservation_date']));
+            $row['sdate'] = date("F d Y ",strtotime($row['reservation_date']));
             $sched_res[$row['id']] = $row;
         }
 
@@ -145,21 +146,19 @@
                 <div class="modal-body rounded-0">
                     <div class="container-fluid">
                         <dl>
-                            <dt class="text-muted">Title</dt>
-                            <dd id="title" class="fw-bold fs-4"></dd>
-                            <dt class="text-muted">Description</dt>
-                            <dd id="description" class=""></dd>
                             <dt class="text-muted">Start</dt>
                             <dd id="start" class=""></dd>
-                            <dt class="text-muted">End</dt>
-                            <dd id="end" class=""></dd>
+
+                            <dt class="text-muted">Type</dt>
+                            <dd id="type" class=""></dd>
+
+                            <dt class="text-muted">Amount</dt>
+                            <dd id="amount" class=""></dd>
                         </dl>
                     </div>
                 </div>
                 <div class="modal-footer rounded-0">
                     <div class="text-end">
-                        <button type="button" class="btn btn-primary btn-sm rounded-0" id="edit" data-id="">Edit</button>
-                        <button type="button" class="btn btn-danger btn-sm rounded-0" id="delete" data-id="">Delete</button>
                         <button type="button" class="btn btn-secondary btn-sm rounded-0" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
