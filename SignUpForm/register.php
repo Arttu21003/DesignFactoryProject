@@ -1,45 +1,39 @@
-<?php
-$json=isset($_POST["user"]) ? $_POST["user"] : "";
-
-if (!($user=tarkistaJson($json))){
-    print "Fill All Fields";
-    exit;
-}
-mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
-try{
-    $yhteys=mysqli_connect("localhost", "root", "", "wp_TRTKP21A3_1");
-}
-catch(Exception $e){
-    print "Yhteysvirhe";
-    exit;
-}
-
-//Tehdään sql-lause, jossa kysymysmerkeillä osoitetaan paikat
-//joihin laitetaan muuttujien arvoja
-$sql="insert into users (tunnus, salasana) values(?, SHA2(?, 256))";
-try{
-    $stmt=mysqli_prepare($yhteys, $sql);
-    mysqli_stmt_bind_param($stmt, 'ss', $user->tunnus, $user->salasana);
-    mysqli_stmt_execute($stmt);
-    mysqli_close($yhteys);
-    print $json;
-}
-catch(Exception $e){
-    print "Tunnus jo olemassa tai muu virhe!";
-}
-?>
-
-
-<?php
-function tarkistaJson($json){
-    if (empty($json)){
-        return false;
-    }
-    $user=json_decode($json, false);
-    if (empty($user->tunnus) || empty($user->salasana)){
-        return false;
-    }
-    return $user;
-}
-
-?>
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration system PHP and MySQL</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+	
+  <form method="post" action="register.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" value="<?php echo $username; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" value="<?php echo $email; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2">
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
+</body>
+</html>
