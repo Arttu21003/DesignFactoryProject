@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+session_start();
+if (!isset($_SESSION["username"])){
+    header("Location:./SignUpForm/login.php");
+    exit;
+}
+print "<h2>Welcome, ".$_SESSION["username"]."!</h2>";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

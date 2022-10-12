@@ -1027,9 +1027,8 @@ print "<h2>Welcome, ".$_SESSION["username"]."!</h2>";
         <li><a href="#hero">Home</a></li>
           <li><a href="../Code/aboutus1.html">About</a></li>
           <li><a href="../calendar/index.php">Make a Reservation</a></li>
-          <li><a href="contact.php">Contact us</a></li>
-          <li><a href="../SignUpForm/login.php">Login</a></li>
-          <li><a href="../SignUpForm/register.php">Register</a></li>
+          <li><a href="../contact.php">Contact us</a></li>
+          <li><a href="./SignUpForm/index.php">Log out</a></li>
           
       </nav><!-- .navbar -->
 
