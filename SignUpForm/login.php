@@ -11,10 +11,6 @@
   <div class="header">
   	<h2>Login</h2>
   </div>
-  <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="../index.html">Home</a></li><nav id="navbar" class="navbar">
-        <ul>
   <form method="post" action="login.php">
   	<?php /*include('errors.php'); */?>
   	<div class="input-group">
