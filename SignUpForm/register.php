@@ -9,7 +9,9 @@
   <div class="header">
   	<h2>Register</h2>
   </div>
-	
+  <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
   <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
