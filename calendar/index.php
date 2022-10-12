@@ -1032,7 +1032,7 @@
 <body class="bg-light">
 
     <?php
-       /* require_once('db-connect.php');
+        require_once('db-connect.php');
 
         $schedules = $conn->query("SELECT * FROM `reservation_form`");
         $sched_res = [];
@@ -1043,7 +1043,7 @@
             $sched_res[$row['id']] = $row;
         }
 
-        if(isset($conn)) $conn->close(); */
+        if(isset($conn)) $conn->close(); 
     ?>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient" id="topNavBar">
