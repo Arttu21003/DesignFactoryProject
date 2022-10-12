@@ -6,11 +6,10 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  </div>
-  <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-		
+<li><a href="../index.html">Home</a></li>	
+<div class="header">
+  	<h2>Register</h2>
+  </div>	
   <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">

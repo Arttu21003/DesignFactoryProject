@@ -5,10 +5,9 @@
   <title>Registration system PHP and MySQL</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
-
-  
 </head>
 <body>
+<li><a href="../index.html">Home</a></li>	
   <div class="header">
   	<h2>Login</h2>
   </div>
