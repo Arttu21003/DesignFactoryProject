@@ -68,8 +68,8 @@ form, .content {
 }
 
 .navbar{
-  background-origin: #fa9107;
   color: black;
+  outline-color: #fa9107;
   text-align: left;
 
 }

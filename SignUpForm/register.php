@@ -6,9 +6,6 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<a href="../Header&Footer">
-  <div class="header">
-  	<h2>Register</h2>
   </div>
   <nav id="navbar" class="navbar">
         <ul>
