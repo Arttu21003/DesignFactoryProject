@@ -1024,11 +1024,11 @@ print "<h2>Welcome, ".$_SESSION["username"]."!</h2>";
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-        <li><a href="#hero">Home</a></li>
+        <li><a href="../afterlogin.html">Home</a></li>
           <li><a href="../Code/aboutus1.html">About</a></li>
           <li><a href="../calendar/index.php">Make a Reservation</a></li>
           <li><a href="../contact.php">Contact us</a></li>
-          <li><a href="./SignUpForm/index.php">Log out</a></li>
+          <li><a href="../SignUpForm/index.php">Log out</a></li>
           
       </nav><!-- .navbar -->
 
@@ -1041,6 +1041,8 @@ print "<h2>Welcome, ".$_SESSION["username"]."!</h2>";
 
     <?php
         require_once('db-connect.php');
+
+        
 
         $schedules = $conn->query("SELECT * FROM `reservation_form`");
         $sched_res = [];
