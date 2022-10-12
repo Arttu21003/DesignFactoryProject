@@ -11,7 +11,7 @@
   </div>
   <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
   <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
