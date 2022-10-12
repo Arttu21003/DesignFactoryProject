@@ -2,6 +2,15 @@
 <html lang="en">
 <head>
 
+<?php
+session_start();
+if (!isset($_SESSION["username"])){
+    header("Location:../SignUpForm/login.php");
+    exit;
+}
+print "<h2>Welcome, ".$_SESSION["username"]."!</h2>";
+?>
+
 <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
