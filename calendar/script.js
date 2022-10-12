@@ -8,7 +8,7 @@ $(function() {
     if (!!scheds) {
         Object.keys(scheds).map(k => {
             var row = scheds[k]
-            events.push({ id: row.id, title: row.type + " " + row.amount, start: row.reservation_date });
+            events.push({ id: row.id, title: row.type + " " + row.amount, start: row.reservation_date});
         });
     }
     
@@ -18,6 +18,7 @@ $(function() {
         y = date.getFullYear(),
 
     calendar = new Calendar(document.getElementById('calendar'), {
+        
         headerToolbar: {
             left: 'prev,next today',
             right: 'dayGridMonth,dayGridWeek,list',
@@ -30,6 +31,7 @@ $(function() {
         eventClick: function(info) {
             var details = $('#event-details-modal');
             var id = info.event.id;
+            
 
             if (!!scheds[id]) {
                 details.find('#title').text(scheds[id].title);
@@ -119,4 +121,7 @@ $(function() {
         var maxDate = year + '-' + month + '-' + day;
         $('#reservation_date').attr('min', maxDate);
     });
+
+    
+    
 });
