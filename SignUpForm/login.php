@@ -38,8 +38,8 @@
       <nav id="navbar" class="navbar">
         <ul>
         <li><a href="#hero">Home</a></li>
-          <li><a href="Code/aboutus.html">About</a></li>
-          <li><a href="SignUpForm/register.php">Register</a></li>
+          <li><a href="../Code/aboutus.html">About</a></li>
+          <li><a href="../SignUpForm/register.php">Register</a></li>
           
       </nav><!-- .navbar -->
 
